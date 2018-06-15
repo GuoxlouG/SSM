@@ -1,0 +1,28 @@
+body{
+    background-image: url("../images/fail_bg.jpg");
+    background-size: 100% 100%;
+}
+div{
+    width: 300px;
+    height: 120px;
+    line-height: 60px;
+    margin: 100px auto;
+    padding: 70px 20px 20px 20px;
+    position: relative;
+}
+div img{
+    width: 80px;
+    height: 60px;
+}
+div span{
+    font-size: 16px;
+    position: absolute;
+    top: 73px;
+}
+div span a{
+    color: #ffca00;
+    text-decoration: none;
+}
+div span a:hover{
+    color: #2cd87d;
+}

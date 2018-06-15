@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+	background: transparent;
+}
+
+video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	background: url(../images/0521.png) no-repeat;
+	background-size: cover;
+}
+
+div {
+	width: 400px;
+	margin: 0 auto;
+	padding: 30px 0;
+	border-radius: 8px;
+	
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+span {
+	font-size: 30px;
+	color: #12413c;
+	height: 30px;
+	line-height: 30px;
+	opacity: 0.6;
+}
+
+input {
+	width: 300px;
+	text-align: center;
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	stroke-opacity: 0.6;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	margin-top: 25px;
+	padding: 5px;
+	border: solid 1px grey;
+}
+
+.button {
+	width: 293px;
+	height: 40px;
+	line-height: 30px;
+	font-size: 18px;
+	margin: 30px;
+	background-color: #d8a532;
+}

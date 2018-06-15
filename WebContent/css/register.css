@@ -1,0 +1,66 @@
+.bcimg{
+    position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+    z-index: -100;
+    background-size: cover;
+}
+div{
+    width: 400px;
+    margin: -20px auto;
+    padding: 30px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+span{
+    font-size: 30px;
+    color: #12413c;
+    height: 30px;
+    line-height: 30px;
+    opacity:0.6;
+}
+.txt{
+    width: 200px;
+    text-align: center;
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+    stroke-opacity: 0.6;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    margin-top: 25px;
+    padding: 5px;
+    border: solid 1px grey;
+}
+#password{
+	margin-top: 10px;
+	width: 200px;
+    text-align: center;
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+    stroke-opacity: 0.6;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 5px;
+    border: solid 1px grey;
+}
+.button{
+    width: 100px;
+    height: 40px;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 10px;
+    background-color: #d8a532;
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    stroke-opacity: 0.7;
+}
+p{
+text-align: left;
+margin-left:50px;
+}

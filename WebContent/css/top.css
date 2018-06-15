@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+.rec{
+    width: 100%;
+    height: 130px;
+    background-color: #464753;
+    position: relative;
+    z-index: 1;
+    background-color:rgba(0,0,0,0.2);
+}
+ #middle{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 430px;
+    opacity:0.8;
+} 
+h1{
+	color:#212121;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: Verdana, Sans-Serif;
+    position: absolute;
+    top: 15px;
+    left: 500px;
+}
+/*
+.user{
+    height: 50px;
+    line-height:28px;
+    text-align: center;
+    color: white;
+    max-width: 200px;
+    border: solid 1px white;
+    padding: 10px;
+    margin: 35px 50px 0 0;
+    text-shadow: none;
+    float: right;
+}
+
+.operate{
+    width: 100px;
+    height: 92px;
+    border: solid 1px grey;
+    position: absolute;
+    top: 103px;
+    right: 37px;
+    opacity: 0;
+    -moz-opacity: 0;
+    transition: 0.5s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+}
+.operate ul li{
+    color: black;
+    text-align: center;
+    background-color: white;
+    font-size: 15px;
+    text-shadow: none;
+    height: 30px;
+    line-height: 29px;
+    list-style-type: none;
+    position: relative;
+}
+.operate ul li:hover{
+    background-color: #fffb8f;
+}
+.operate ul li a{
+    text-decoration: none;
+    color: black;
+}
+.operate ul li #tri{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    left: 65px;
+}
+.operate ul li .set{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    left: 21px;
+}
+.operate ul li .perinfo{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+.operate ul li .outpic{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 8px;
+    left: 22px;
+}
+.operate ul #logout{
+    border-top: solid 1px grey;
+}
+
+.show:hover .operate{
+    opacity: 1;
+    -moz-opacity: 1;
+}
+*/

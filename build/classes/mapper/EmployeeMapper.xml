@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="/">
+<!-- 查询员工信息 -->
+	<select id="selectemp" parameterType="com.cn.domain.Employee" resultType="com.cn.domain.Employee">
+	select * from employee
+	<where>
+			<if test="ecode!='' and ecode!=null">
+				 ecode=#{ecode}
+			</if>
+			<if test="ename!=''and ename!=null">
+				and ename=#{ename}
+			</if>
+	</where>
+	</select>
+<select id="selectemp1" parameterType="com.cn.domain.Employee" resultType="com.cn.domain.Employee">
+	select * from employee
+	</select>
+<!-- 新增员工信息 -->
+	<insert id="addEmp" parameterType="com.cn.domain.Employee" >
+		insert into employee(ecode,ename,sex,birthday,etelephone,eemail)values ("${ecode}","${ename}","${sex}","${birthday}","${etelephone}","${eemail}")
+	</insert>
+	
+<!-- 修改员工信息 -->
+	<select id="selone" parameterType="com.cn.domain.Employee" resultType="com.cn.domain.Employee">
+		select * from employee where ecode=#{ecode}
+	</select>
+	<update id="updateEmp" parameterType="com.cn.domain.Employee">
+		update employee set ename=#{ename},birthday=#{birthday},etelephone=#{etelephone},eemail=#{eemail} where ecode=#{ecode}
+	</update>	
+	
+	<!-- 删除员工信息 -->
+	<delete id="delemp" parameterType="com.cn.domain.Employee">
+		delete from employee where ecode=#{ecode}
+	</delete>
+	
+</mapper>

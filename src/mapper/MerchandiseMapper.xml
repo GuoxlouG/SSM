@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="/">
+	
+	<!-- 查询商品信息 -->
+	<select id="selmer" parameterType="com.cn.domain.Merchandise" resultType="com.cn.domain.Merchandise">
+	select * from merchandise 
+	<where>
+		<if test="mcode!=null and mcode!='' ">
+			mcode=#{mcode}
+		</if> 
+		<if test="mname!=null and mname!='' ">
+			and mname=#{mname}
+		</if>
+	</where>
+	</select>
+	<select id="selmer1" parameterType="com.cn.domain.Merchandise" resultType="com.cn.domain.Merchandise">
+	select * from merchandise 
+	</select>
+	<!-- 新增商品 -->
+	<insert id="addmer" parameterType="com.cn.domain.Merchandise">
+	insert into merchandise(mcode,mname,mprice) values('${mcode}','${mname}','${mprice}')
+	</insert>
+	
+	<!-- 根据编号修改商品信息 -->
+	<select id="selmerone" parameterType="com.cn.domain.Merchandise" resultType="com.cn.domain.Merchandise">
+		select * from merchandise where mcode=#{mcode}
+	</select>
+	
+	<update id="upgoods" parameterType="com.cn.domain.Merchandise">
+		update merchandise set mname=#{mname},mprice=#{mprice} where mcode=#{mcode}
+	</update>
+	
+	<!-- 删除商品信息 -->
+	<delete id="delgoods" parameterType="com.cn.domain.Merchandise">
+		delete from merchandise where mcode=#{mcode}
+	</delete>
+</mapper>

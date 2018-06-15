@@ -1,0 +1,31 @@
+.whole{
+    width: 83%;
+    height: 525px;
+    background-size: 104% 104%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    float: left;
+    margin-left: 230px;
+    margin-top: -525px;
+}
+.content{
+    line-height: 30px;
+    font-size: 17px;
+    color: #292929;
+    text-indent: 2em;
+    width: 93%;
+    padding: 15px;
+    margin: 60px 0 0 39px;
+    border: solid 1px #ccc;
+    box-shadow:0 0 30px #ccc inset;
+    -moz-box-shadow: 0 0 30px #ccc inset;
+    -o-box-shadow: 0 0 30px #ccc inset;
+    -webkit-box-shadow: 0 0 30px #ccc inset;
+}
+p{
+    color: #272f2d;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+}

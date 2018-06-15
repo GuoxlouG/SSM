@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="/">
+
+<!-- 查询所有客户的信息 -->
+	<select id="selectCustom" parameterType="com.cn.domain.Customer" resultType="com.cn.domain.Customer">
+		select * from customer
+		<where>
+			<if test="ccode!='' and ccode!=null">
+				 ccode=#{ccode}
+			</if>
+			<if test="cname!=''and cname!=null">
+				and cname=#{cname}
+			</if>
+		</where>
+	</select>
+	<select id="selectCustom1" parameterType="com.cn.domain.Customer" resultType="com.cn.domain.Customer">
+		select * from customer
+		</select>	
+	<!-- 新增客户信息 -->
+ 	<insert id="insertCus" parameterType="com.cn.domain.Customer">
+ 		insert into customer (ccode,cname,address,ctelephone,cemail)values ("${ccode}","${cname}","${address}","${ctelephone}","${cemail}")
+ 	</insert>
+ 	
+ 	<!-- 根据编号修改客户信息 -->
+ 	<select id="selcusone" parameterType="com.cn.domain.Customer" resultType="com.cn.domain.Customer">
+ 		select * from customer where ccode=#{ccode}
+ 	</select>
+ 	
+ 	<update id="updatecus" parameterType="com.cn.domain.Customer">
+ 		update customer set cname=#{cname},address=#{address},ctelephone=#{ctelephone},cemail=#{cemail} where ccode=#{ccode}
+ 	</update>
+ 	
+ 	<!-- 删除客户信息 -->
+	<delete id="delcus" parameterType="com.cn.domain.Customer">
+		delete from customer where ccode=#{ccode}
+	</delete>
+	
+</mapper>
